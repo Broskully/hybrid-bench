@@ -1,0 +1,5 @@
+Figure 2: send [25.1, 50.1, 100.1, 125.1, 150.02, 200.04] throughput [24.2, 48.4, 96.7, 117.9, 113.92, 116.54] avg latency [0.238, 0.158, 0.148, 2.96, 16.55, 36.032] sustainable send rate 100.1
+saved figure2-throughput-latency.png and figure2-throughput-latency.pdf
+Figure 3: fabric ledger [2056.8435, 2049.817, 2052.2975] offchain [6.1095, 11.802, 51.9125]
+Figure 3: postgres ledger [1.286, 1.2805, 1.3345] offchain [4.6915, 10.9845, 47.2975]
+saved figure3-ledger-offchain.png and figure3-ledger-offchain.pdf
