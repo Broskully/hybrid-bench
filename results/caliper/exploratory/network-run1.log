@@ -1,0 +1,354 @@
+[0;34mUsing docker and docker compose[0m
+[0;34mStopping network[0m
+ Container peer0.org1.example.com Stopping 
+ Container orderer.example.com Stopping 
+ Container peer0.org2.example.com Stopping 
+ Container orderer.example.com Stopped 
+ Container orderer.example.com Removing 
+ Container orderer.example.com Removed 
+ Container peer0.org1.example.com Stopped 
+ Container peer0.org1.example.com Removing 
+ Container peer0.org1.example.com Removed 
+ Container couchdb0 Stopping 
+ Container peer0.org2.example.com Stopped 
+ Container peer0.org2.example.com Removing 
+ Container peer0.org2.example.com Removed 
+ Container couchdb1 Stopping 
+ Container couchdb0 Stopped 
+ Container couchdb0 Removing 
+ Container couchdb0 Removed 
+ Container couchdb1 Stopped 
+ Container couchdb1 Removing 
+ Container couchdb1 Removed 
+ Network fabric_test Removing 
+ Volume compose_orderer.example.com Removing 
+ Volume compose_peer0.org2.example.com Removing 
+ Volume compose_peer0.org1.example.com Removing 
+ Volume compose_orderer.example.com Removed 
+ Volume compose_peer0.org1.example.com Removed 
+ Volume compose_peer0.org2.example.com Removed 
+ Network fabric_test Removed 
+Error response from daemon: get docker_orderer.example.com: no such volume
+Error response from daemon: get docker_peer0.org1.example.com: no such volume
+Error response from daemon: get docker_peer0.org2.example.com: no such volume
+[0;34mRemoving remaining containers[0m
+[0;34mRemoving generated chaincode docker images[0m
+Untagged: dev-peer0.org2.example.com-hybrid_1.0-49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283-e8578914b6ae1b02086cd2238201e2ed146f449f7a17f38cd430e25ca4a98aaa:latest
+Deleted: sha256:87565ec9afb22ba9662ca8fe281aa263784c225505c0b260a3238b944196f32a
+Untagged: dev-peer0.org1.example.com-hybrid_1.0-49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283-e7eb27777e391b0b7db8780e9e5985e7513fd537162d15119ed12e75db58b214:latest
+Deleted: sha256:d2b76eafced4f9bb62b1f958e65bce1570db4b0db3182269dfde4c99b1be735b
+Untagged: dev-peer0.org2.example.com-basic_1.0-1d4d445573112813889f87c307bc2b5fbe664c87b24c035bee15cbcc7f59b629-c68f8ecc2a0ff0cc1497615f5e33a8bfa908e0fd3555f864cfa1398b52d341cb:latest
+Deleted: sha256:a70956ad3c6984cc6f3d3143877a086200d6bef1ffaec080b2ea7e97d8ea8854
+Untagged: dev-peer0.org1.example.com-basic_1.0-1d4d445573112813889f87c307bc2b5fbe664c87b24c035bee15cbcc7f59b629-d3cf9b1f4b9747cc8433ac0e74bfaeade1cf0b97f5c1163835f604aa885d60dc:latest
+Deleted: sha256:5fdfab37314b8a6e990355348bfaf772528753b8a555675471d57bea2505e97e
+[0;34mUsing docker and docker compose[0m
+[0;34mCreating channel 'mychannel'.[0m
+[0;34mIf network is not up, starting nodes with CLI timeout of '5' tries and CLI delay of '3' seconds and using database 'couchdb with crypto from 'cryptogen'[0m
+[0;34mBringing up network[0m
+[0;34mLOCAL_VERSION=v2.5.16[0m
+[0;34mDOCKER_IMAGE_VERSION=v2.5.16[0m
+/home/maximusdebois/hybrid-bench/fabric-samples/test-network/../bin/cryptogen
+[0;34mGenerating certificates using cryptogen tool[0m
+[0;34mCreating Org1 Identities[0m
++ cryptogen generate --config=./organizations/cryptogen/crypto-config-org1.yaml --output=organizations
+org1.example.com
++ res=0
+[0;34mCreating Org2 Identities[0m
++ cryptogen generate --config=./organizations/cryptogen/crypto-config-org2.yaml --output=organizations
+org2.example.com
++ res=0
+[0;34mCreating Orderer Org Identities[0m
++ cryptogen generate --config=./organizations/cryptogen/crypto-config-orderer.yaml --output=organizations
++ res=0
+[0;34mGenerating CCP files for Org1 and Org2[0m
+ Volume compose_orderer.example.com Creating 
+ Volume compose_peer0.org1.example.com Creating 
+ Volume compose_peer0.org2.example.com Creating 
+ Volume compose_peer0.org2.example.com Creating 
+ Volume compose_peer0.org1.example.com Creating 
+ Network fabric_test Creating 
+ Volume compose_orderer.example.com Creating 
+ Network fabric_test Creating 
+ Volume compose_peer0.org1.example.com Created 
+ Volume compose_peer0.org1.example.com Created 
+ Volume compose_peer0.org2.example.com Created 
+ Volume compose_peer0.org2.example.com Created 
+ Volume compose_orderer.example.com Created 
+ Volume compose_orderer.example.com Created 
+ Network fabric_test Created 
+ Network fabric_test Created 
+ Container couchdb1 Creating 
+ Container orderer.example.com Creating 
+ Container couchdb0 Creating 
+ Container orderer.example.com Created 
+ Container couchdb1 Created 
+ Container peer0.org2.example.com Creating 
+ Container couchdb0 Created 
+ Container peer0.org1.example.com Creating 
+ Container peer0.org2.example.com Created 
+ Container peer0.org1.example.com Created 
+ Container couchdb0 Starting 
+ Container orderer.example.com Starting 
+ Container couchdb1 Starting 
+ Container couchdb0 Started 
+ Container peer0.org1.example.com Starting 
+ Container couchdb1 Started 
+ Container peer0.org2.example.com Starting 
+ Container peer0.org2.example.com Started 
+ Container orderer.example.com Started 
+ Container peer0.org1.example.com Started 
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED          STATUS                     PORTS                                                                                                                                   NAMES
+222390776e4e   hyperledger/fabric-peer:latest             "peer node start"        1 second ago     Up Less than a second      0.0.0.0:7051->7051/tcp, [::]:7051->7051/tcp, 0.0.0.0:9444->9444/tcp, [::]:9444->9444/tcp                                                peer0.org1.example.com
+153198f570a2   hyperledger/fabric-peer:latest             "peer node start"        1 second ago     Up Less than a second      0.0.0.0:9051->9051/tcp, [::]:9051->9051/tcp, 7051/tcp, 0.0.0.0:9445->9445/tcp, [::]:9445->9445/tcp                                      peer0.org2.example.com
+681f0c093d6f   couchdb:3.4.2                              "tini -- /docker-ent…"   1 second ago     Up Less than a second      4369/tcp, 9100/tcp, 0.0.0.0:7984->5984/tcp, [::]:7984->5984/tcp                                                                         couchdb1
+c4728138bd2f   couchdb:3.4.2                              "tini -- /docker-ent…"   1 second ago     Up Less than a second      4369/tcp, 9100/tcp, 0.0.0.0:5984->5984/tcp, [::]:5984->5984/tcp                                                                         couchdb0
+d48492e18a16   hyperledger/fabric-orderer:latest          "orderer"                1 second ago     Up Less than a second      0.0.0.0:7050->7050/tcp, [::]:7050->7050/tcp, 0.0.0.0:7053->7053/tcp, [::]:7053->7053/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp   orderer.example.com
+536408888aff   pgsty/minio:RELEASE.2026-08-04T00-00-00Z   "/usr/bin/docker-ent…"   27 minutes ago   Exited (0) 8 seconds ago                                                                                                                                           minio
+931bbbb18de2   postgres:16                                "docker-entrypoint.s…"   32 minutes ago   Exited (0) 8 seconds ago                                                                                                                                           pg
+b5b34348a42b   31ffc9002b88                               "docker-entrypoint.s…"   39 minutes ago   Created                                                                                                                                                            priceless_franklin
+7c287cae01c0   67f44cc46f3e                               "docker-entrypoint.s…"   39 minutes ago   Created                                                                                                                                                            confident_banach
+f7def12f5e30   3d8bcd4d1580                               "docker-entrypoint.s…"   39 minutes ago   Created                                                                                                                                                            practical_dirac
+7bc4370c8de8   70f1857cb59d                               "docker-entrypoint.s…"   39 minutes ago   Created                                                                                                                                                            crazy_faraday
+57244e643771   e1765ff2c264                               "docker-entrypoint.s…"   45 minutes ago   Created                                                                                                                                                            focused_dewdney
+8a4f7e59fa28   7a00d66a9513                               "docker-entrypoint.s…"   45 minutes ago   Created                                                                                                                                                            nostalgic_ride
+a9f4fa08c814   45af5a1df7f8                               "docker-entrypoint.s…"   45 minutes ago   Created                                                                                                                                                            stoic_roentgen
+904e94b230f2   75da8698067c                               "docker-entrypoint.s…"   45 minutes ago   Created                                                                                                                                                            eager_chaum
+0dcaef55509d   hello-world                                "/hello"                 2 hours ago      Exited (0) 2 hours ago                                                                                                                                             bold_hamilton
+[0;34mUsing docker and docker compose[0m
+[0;34mGenerating channel genesis block 'mychannel.block'[0m
+[0;34mUsing organization 1[0m
+/home/maximusdebois/hybrid-bench/fabric-samples/test-network/../bin/configtxgen
++ '[' 0 -eq 1 ']'
++ configtxgen -profile ChannelUsingRaft -outputBlock ./channel-artifacts/mychannel.block -channelID mychannel
+[34m2026-11-08 20:02:01.345 GMT 0001 INFO[0m [common.tools.configtxgen] [34;1mmain[0m -> Loading configuration
+[34m2026-11-08 20:02:01.349 GMT 0002 INFO[0m [common.tools.configtxgen.localconfig] [34;1mcompleteInitialization[0m -> orderer type: etcdraft
+[34m2026-11-08 20:02:01.349 GMT 0003 INFO[0m [common.tools.configtxgen.localconfig] [34;1mcompleteInitialization[0m -> Orderer.EtcdRaft.Options unset, setting to tick_interval:"500ms" election_tick:10 heartbeat_tick:1 max_inflight_blocks:5 snapshot_interval_size:16777216 
+[34m2026-11-08 20:02:01.349 GMT 0004 INFO[0m [common.tools.configtxgen.localconfig] [34;1mLoad[0m -> Loaded configuration: /home/maximusdebois/hybrid-bench/fabric-samples/test-network/configtx/configtx.yaml
+[34m2026-11-08 20:02:01.351 GMT 0005 INFO[0m [common.tools.configtxgen] [34;1mdoOutputBlock[0m -> Generating genesis block
+[34m2026-11-08 20:02:01.351 GMT 0006 INFO[0m [common.tools.configtxgen] [34;1mdoOutputBlock[0m -> Creating application channel genesis block
+[34m2026-11-08 20:02:01.352 GMT 0007 INFO[0m [common.tools.configtxgen] [34;1mdoOutputBlock[0m -> Writing genesis block
++ res=0
+[0;34mCreating channel mychannel[0m
+[0;34mAdding orderers[0m
++ . scripts/orderer.sh mychannel
++ '[' 0 -eq 1 ']'
++ res=0
+Status: 201
+{
+	"name": "mychannel",
+	"url": "/participation/v1/channels/mychannel",
+	"consensusRelation": "consenter",
+	"status": "active",
+	"height": 1
+}
+
+[0;32mChannel 'mychannel' created[0m
+[0;34mJoining org1 peer to the channel...[0m
+[0;34mUsing organization 1[0m
++ peer channel join -b ./channel-artifacts/mychannel.block
++ res=0
+[34m2026-11-08 20:02:07.466 GMT 0001 INFO[0m [channelCmd] [34;1mInitCmdFactory[0m -> Endorser and orderer connections initialized
+[34m2026-11-08 20:02:07.559 GMT 0002 INFO[0m [channelCmd] [34;1mexecuteJoin[0m -> Successfully submitted proposal to join channel
+[0;34mJoining org2 peer to the channel...[0m
+[0;34mUsing organization 2[0m
++ peer channel join -b ./channel-artifacts/mychannel.block
++ res=0
+[34m2026-11-08 20:02:10.612 GMT 0001 INFO[0m [channelCmd] [34;1mInitCmdFactory[0m -> Endorser and orderer connections initialized
+[34m2026-11-08 20:02:10.696 GMT 0002 INFO[0m [channelCmd] [34;1mexecuteJoin[0m -> Successfully submitted proposal to join channel
+[0;34mSetting anchor peer for org1...[0m
+[0;34mUsing organization 1[0m
+[0;34mFetching channel config for channel mychannel[0m
+[0;34mUsing organization 1[0m
+[0;34mFetching the most recent configuration block for the channel[0m
+++ peer channel fetch config /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.pb -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com -c mychannel --tls --cafile /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+[34m2026-11-08 20:02:10.732 GMT 0001 INFO[0m [channelCmd] [34;1mInitCmdFactory[0m -> Endorser and orderer connections initialized
+[34m2026-11-08 20:02:10.734 GMT 0002 INFO[0m [cli.common] [34;1mreadBlock[0m -> Received block: 0
+[34m2026-11-08 20:02:10.734 GMT 0003 INFO[0m [channelCmd] [34;1mfetch[0m -> Retrieving last config block: 0
+[34m2026-11-08 20:02:10.735 GMT 0004 INFO[0m [cli.common] [34;1mreadBlock[0m -> Received block: 0
+[0;34mDecoding config block to JSON and isolating config to /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org1MSPconfig.json[0m
+++ configtxlator proto_decode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.pb --type common.Block --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.json
+++ jq '.data.data[0].payload.data.config' /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.json
+++ res=0
+[0;34mGenerating anchor peer update transaction for Org1 on channel mychannel[0m
+++ jq '.channel_group.groups.Application.groups.Org1MSP.values += {"AnchorPeers":{"mod_policy": "Admins","value":{"anchor_peers": [{"host": "peer0.org1.example.com","port": 7051}]},"version": "0"}}' /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org1MSPconfig.json
+++ res=0
+++ configtxlator proto_encode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org1MSPconfig.json --type common.Config --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/original_config.pb
+++ configtxlator proto_encode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org1MSPmodified_config.json --type common.Config --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/modified_config.pb
+++ configtxlator compute_update --channel_id mychannel --original /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/original_config.pb --updated /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/modified_config.pb --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.pb
+++ configtxlator proto_decode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.pb --type common.ConfigUpdate --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.json
+++ jq .
++++ cat /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.json
+++ echo '{"payload":{"header":{"channel_header":{"channel_id":"mychannel", "type":2}},"data":{"config_update":{' '"channel_id":' '"mychannel",' '"isolated_data":' '{},' '"read_set":' '{' '"groups":' '{' '"Application":' '{' '"groups":' '{' '"Org1MSP":' '{' '"groups":' '{},' '"mod_policy":' '"",' '"policies":' '{' '"Admins":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Endorsement":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Readers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Writers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '}' '},' '"values":' '{' '"MSP":' '{' '"mod_policy":' '"",' '"value":' null, '"version":' '"0"' '}' '},' '"version":' '"0"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '},' '"write_set":' '{' '"groups":' '{' '"Application":' '{' '"groups":' '{' '"Org1MSP":' '{' '"groups":' '{},' '"mod_policy":' '"Admins",' '"policies":' '{' '"Admins":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Endorsement":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Readers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Writers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '}' '},' '"values":' '{' '"AnchorPeers":' '{' '"mod_policy":' '"Admins",' '"value":' '{' '"anchor_peers":' '[' '{' '"host":' '"peer0.org1.example.com",' '"port":' 7051 '}' ']' '},' '"version":' '"0"' '},' '"MSP":' '{' '"mod_policy":' '"",' '"value":' null, '"version":' '"0"' '}' '},' '"version":' '"1"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '}' '}}}}'
+++ configtxlator proto_encode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update_in_envelope.json --type common.Envelope --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org1MSPanchors.tx
+[34m2026-11-08 20:02:10.843 GMT 0001 INFO[0m [channelCmd] [34;1mInitCmdFactory[0m -> Endorser and orderer connections initialized
+[34m2026-11-08 20:02:10.850 GMT 0002 INFO[0m [channelCmd] [34;1mupdate[0m -> Successfully submitted channel update
+[0;32mAnchor peer set for org 'Org1MSP' on channel 'mychannel'[0m
+[0;34mSetting anchor peer for org2...[0m
+[0;34mUsing organization 2[0m
+[0;34mFetching channel config for channel mychannel[0m
+[0;34mUsing organization 2[0m
+[0;34mFetching the most recent configuration block for the channel[0m
+++ peer channel fetch config /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.pb -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com -c mychannel --tls --cafile /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+[34m2026-11-08 20:02:10.891 GMT 0001 INFO[0m [channelCmd] [34;1mInitCmdFactory[0m -> Endorser and orderer connections initialized
+[34m2026-11-08 20:02:10.894 GMT 0002 INFO[0m [cli.common] [34;1mreadBlock[0m -> Received block: 1
+[34m2026-11-08 20:02:10.894 GMT 0003 INFO[0m [channelCmd] [34;1mfetch[0m -> Retrieving last config block: 1
+[34m2026-11-08 20:02:10.895 GMT 0004 INFO[0m [cli.common] [34;1mreadBlock[0m -> Received block: 1
+[0;34mDecoding config block to JSON and isolating config to /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org2MSPconfig.json[0m
+++ configtxlator proto_decode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.pb --type common.Block --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.json
+++ jq '.data.data[0].payload.data.config' /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_block.json
+++ res=0
+[0;34mGenerating anchor peer update transaction for Org2 on channel mychannel[0m
+++ jq '.channel_group.groups.Application.groups.Org2MSP.values += {"AnchorPeers":{"mod_policy": "Admins","value":{"anchor_peers": [{"host": "peer0.org2.example.com","port": 9051}]},"version": "0"}}' /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org2MSPconfig.json
+++ res=0
+++ configtxlator proto_encode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org2MSPconfig.json --type common.Config --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/original_config.pb
+++ configtxlator proto_encode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org2MSPmodified_config.json --type common.Config --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/modified_config.pb
+++ configtxlator compute_update --channel_id mychannel --original /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/original_config.pb --updated /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/modified_config.pb --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.pb
+++ configtxlator proto_decode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.pb --type common.ConfigUpdate --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.json
+++ jq .
++++ cat /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update.json
+++ echo '{"payload":{"header":{"channel_header":{"channel_id":"mychannel", "type":2}},"data":{"config_update":{' '"channel_id":' '"mychannel",' '"isolated_data":' '{},' '"read_set":' '{' '"groups":' '{' '"Application":' '{' '"groups":' '{' '"Org2MSP":' '{' '"groups":' '{},' '"mod_policy":' '"",' '"policies":' '{' '"Admins":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Endorsement":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Readers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Writers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '}' '},' '"values":' '{' '"MSP":' '{' '"mod_policy":' '"",' '"value":' null, '"version":' '"0"' '}' '},' '"version":' '"0"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '},' '"write_set":' '{' '"groups":' '{' '"Application":' '{' '"groups":' '{' '"Org2MSP":' '{' '"groups":' '{},' '"mod_policy":' '"Admins",' '"policies":' '{' '"Admins":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Endorsement":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Readers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '},' '"Writers":' '{' '"mod_policy":' '"",' '"policy":' null, '"version":' '"0"' '}' '},' '"values":' '{' '"AnchorPeers":' '{' '"mod_policy":' '"Admins",' '"value":' '{' '"anchor_peers":' '[' '{' '"host":' '"peer0.org2.example.com",' '"port":' 9051 '}' ']' '},' '"version":' '"0"' '},' '"MSP":' '{' '"mod_policy":' '"",' '"value":' null, '"version":' '"0"' '}' '},' '"version":' '"1"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '}' '},' '"mod_policy":' '"",' '"policies":' '{},' '"values":' '{},' '"version":' '"0"' '}' '}}}}'
+++ configtxlator proto_encode --input /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/config_update_in_envelope.json --type common.Envelope --output /home/maximusdebois/hybrid-bench/fabric-samples/test-network/channel-artifacts/Org2MSPanchors.tx
+[34m2026-11-08 20:02:11.011 GMT 0001 INFO[0m [channelCmd] [34;1mInitCmdFactory[0m -> Endorser and orderer connections initialized
+[34m2026-11-08 20:02:11.018 GMT 0002 INFO[0m [channelCmd] [34;1mupdate[0m -> Successfully submitted channel update
+[0;32mAnchor peer set for org 'Org2MSP' on channel 'mychannel'[0m
+[0;32mChannel 'mychannel' joined[0m
+[0;34mUsing docker and docker compose[0m
+[0;34mdeploying chaincode on channel 'mychannel'[0m
+executing with the following
+- CHANNEL_NAME: [0;32mmychannel[0m
+- CC_NAME: [0;32mhybrid[0m
+- CC_SRC_PATH: [0;32m../../hybrid-registry[0m
+- CC_SRC_LANGUAGE: [0;32mjavascript[0m
+- CC_VERSION: [0;32m1.0[0m
+- CC_SEQUENCE: [0;32mauto[0m
+- CC_END_POLICY: [0;32mNA[0m
+- CC_COLL_CONFIG: [0;32mNA[0m
+- CC_INIT_FCN: [0;32mNA[0m
+- DELAY: [0;32m3[0m
+- MAX_RETRY: [0;32m5[0m
+- VERBOSE: [0;32mfalse[0m
+executing with the following
+- CC_NAME: [0;32mhybrid[0m
+- CC_SRC_PATH: [0;32m../../hybrid-registry[0m
+- CC_SRC_LANGUAGE: [0;32mjavascript[0m
+- CC_VERSION: [0;32m1.0[0m
++ '[' false = true ']'
++ peer lifecycle chaincode package hybrid.tar.gz --path ../../hybrid-registry --lang node --label hybrid_1.0
++ res=0
+[0;32mChaincode is packaged[0m
+[0;34mInstalling chaincode on peer0.org1...[0m
+[0;34mUsing organization 1[0m
++ peer lifecycle chaincode queryinstalled --output json
++ jq -r 'try (.installed_chaincodes[].package_id)'
++ grep '^hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283$'
++ test 1 -ne 0
++ peer lifecycle chaincode install hybrid.tar.gz
++ res=0
+[34m2026-11-08 20:02:27.613 GMT 0001 INFO[0m [cli.lifecycle.chaincode] [34;1msubmitInstallProposal[0m -> Installed remotely: response:<status:200 payload:"\nKhybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283\022\nhybrid_1.0" > 
+[34m2026-11-08 20:02:27.613 GMT 0002 INFO[0m [cli.lifecycle.chaincode] [34;1msubmitInstallProposal[0m -> Chaincode code package identifier: hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283
+[0;32mChaincode is installed on peer0.org1[0m
+[0;34mInstall chaincode on peer0.org2...[0m
+[0;34mUsing organization 2[0m
++ peer lifecycle chaincode queryinstalled --output json
++ grep '^hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283$'
++ jq -r 'try (.installed_chaincodes[].package_id)'
++ test 1 -ne 0
++ peer lifecycle chaincode install hybrid.tar.gz
++ res=0
+[34m2026-11-08 20:02:40.714 GMT 0001 INFO[0m [cli.lifecycle.chaincode] [34;1msubmitInstallProposal[0m -> Installed remotely: response:<status:200 payload:"\nKhybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283\022\nhybrid_1.0" > 
+[34m2026-11-08 20:02:40.714 GMT 0002 INFO[0m [cli.lifecycle.chaincode] [34;1msubmitInstallProposal[0m -> Chaincode code package identifier: hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283
+[0;32mChaincode is installed on peer0.org2[0m
+++ peer lifecycle chaincode querycommitted --channelID mychannel --name hybrid
+++ sed -n '/Version:/{s/.*Sequence: //; s/, Endorsement Plugin:.*$//; p;}'
+Error: query failed with status: 404 - namespace hybrid is not defined
++ COMMITTED_CC_SEQUENCE=
++ res=0
+[0;34mUsing organization 1[0m
++ peer lifecycle chaincode queryinstalled --output json
++ grep '^hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283$'
++ jq -r 'try (.installed_chaincodes[].package_id)'
++ res=0
+hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283
+[0;32mQuery installed successful on peer0.org1 on channel[0m
+[0;34mUsing organization 1[0m
++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem --channelID mychannel --name hybrid --version 1.0 --package-id hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283 --sequence 1
++ res=0
+[34m2026-11-08 20:02:42.953 GMT 0001 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [0b5264f7f8204a02c49005883ec41541192178a28dd6d3fb286e5de323952a5a] committed with status (VALID) at localhost:7051
+[0;32mChaincode definition approved on peer0.org1 on channel 'mychannel'[0m
+[0;34mUsing organization 1[0m
+[0;34mChecking the commit readiness of the chaincode definition on peer0.org1 on channel 'mychannel'...[0m
+[0;34mAttempting to check the commit readiness of the chaincode definition on peer0.org1, Retry after 3 seconds.[0m
++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name hybrid --version 1.0 --sequence 1 --output json
++ res=0
+{
+	"approvals": {
+		"Org1MSP": true,
+		"Org2MSP": false
+	}
+}
+[0;34mChecking the commit readiness of the chaincode definition successful on peer0.org1 on channel 'mychannel'[0m
+[0;34mUsing organization 2[0m
+[0;34mChecking the commit readiness of the chaincode definition on peer0.org2 on channel 'mychannel'...[0m
+[0;34mAttempting to check the commit readiness of the chaincode definition on peer0.org2, Retry after 3 seconds.[0m
++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name hybrid --version 1.0 --sequence 1 --output json
++ res=0
+{
+	"approvals": {
+		"Org1MSP": true,
+		"Org2MSP": false
+	}
+}
+[0;34mChecking the commit readiness of the chaincode definition successful on peer0.org2 on channel 'mychannel'[0m
+[0;34mUsing organization 2[0m
++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem --channelID mychannel --name hybrid --version 1.0 --package-id hybrid_1.0:49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283 --sequence 1
++ res=0
+[34m2026-11-08 20:02:51.240 GMT 0001 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [2c97fb99c174769b5eafa5038171b3760721e867fd7b686696d632461a1949e0] committed with status (VALID) at localhost:9051
+[0;32mChaincode definition approved on peer0.org2 on channel 'mychannel'[0m
+[0;34mUsing organization 1[0m
+[0;34mChecking the commit readiness of the chaincode definition on peer0.org1 on channel 'mychannel'...[0m
+[0;34mAttempting to check the commit readiness of the chaincode definition on peer0.org1, Retry after 3 seconds.[0m
++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name hybrid --version 1.0 --sequence 1 --output json
++ res=0
+{
+	"approvals": {
+		"Org1MSP": true,
+		"Org2MSP": true
+	}
+}
+[0;34mChecking the commit readiness of the chaincode definition successful on peer0.org1 on channel 'mychannel'[0m
+[0;34mUsing organization 2[0m
+[0;34mChecking the commit readiness of the chaincode definition on peer0.org2 on channel 'mychannel'...[0m
+[0;34mAttempting to check the commit readiness of the chaincode definition on peer0.org2, Retry after 3 seconds.[0m
++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name hybrid --version 1.0 --sequence 1 --output json
++ res=0
+{
+	"approvals": {
+		"Org1MSP": true,
+		"Org2MSP": true
+	}
+}
+[0;34mChecking the commit readiness of the chaincode definition successful on peer0.org2 on channel 'mychannel'[0m
+[0;34mUsing organization 1[0m
+[0;34mUsing organization 2[0m
++ peer lifecycle chaincode commit -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem --channelID mychannel --name hybrid --peerAddresses localhost:7051 --tlsRootCertFiles /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem --peerAddresses localhost:9051 --tlsRootCertFiles /home/maximusdebois/hybrid-bench/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem --version 1.0 --sequence 1
++ res=0
+[34m2026-11-08 20:02:59.450 GMT 0001 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [9f72b6a4582f787536a765810fc729f62abd83d6bf16940e4acda2b5f2dc1b0d] committed with status (VALID) at localhost:7051
+[34m2026-11-08 20:02:59.453 GMT 0002 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [9f72b6a4582f787536a765810fc729f62abd83d6bf16940e4acda2b5f2dc1b0d] committed with status (VALID) at localhost:9051
+[0;32mChaincode definition committed on channel 'mychannel'[0m
+[0;34mUsing organization 1[0m
+[0;34mQuerying chaincode definition on peer0.org1 on channel 'mychannel'...[0m
+[0;34mAttempting to Query committed status on peer0.org1, Retry after 3 seconds.[0m
++ peer lifecycle chaincode querycommitted --channelID mychannel --name hybrid
++ res=0
+Committed chaincode definition for chaincode 'hybrid' on channel 'mychannel':
+Version: 1.0, Sequence: 1, Endorsement Plugin: escc, Validation Plugin: vscc, Approvals: [Org1MSP: true, Org2MSP: true]
+[0;32mQuery chaincode definition successful on peer0.org1 on channel 'mychannel'[0m
+[0;34mUsing organization 2[0m
+[0;34mQuerying chaincode definition on peer0.org2 on channel 'mychannel'...[0m
+[0;34mAttempting to Query committed status on peer0.org2, Retry after 3 seconds.[0m
++ peer lifecycle chaincode querycommitted --channelID mychannel --name hybrid
++ res=0
+Committed chaincode definition for chaincode 'hybrid' on channel 'mychannel':
+Version: 1.0, Sequence: 1, Endorsement Plugin: escc, Validation Plugin: vscc, Approvals: [Org1MSP: true, Org2MSP: true]
+[0;32mQuery chaincode definition successful on peer0.org2 on channel 'mychannel'[0m
+[0;34mChaincode initialization is not required[0m

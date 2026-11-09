@@ -1,0 +1,4 @@
+mode,size_bytes,run,hash_ms,offchain_ms,ledger_ms,total_ms
+postgres,10240,0,0.036,9.217,3.784,13.036
+postgres,1048576,0,0.476,14.282,1.791,16.548
+postgres,10485760,0,4.980,52.212,1.858,59.051

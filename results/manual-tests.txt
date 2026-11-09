@@ -1,0 +1,16 @@
+
+$ hinvoke {"function":"RegisterData","Args":["GA-001","abc123","Org1MSP,Org2MSP"]}  # 2026-11-08T19:25:41Z
+[34m2026-11-08 19:25:43.623 GMT 0002 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [df0193c1ae4f8cc78d668fdd5f4eb8378a0e8415392b4774db7f75fb947a4f56] committed with status (VALID) at localhost:7051
+[34m2026-11-08 19:25:43.623 GMT 0001 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [df0193c1ae4f8cc78d668fdd5f4eb8378a0e8415392b4774db7f75fb947a4f56] committed with status (VALID) at localhost:9051
+[34m2026-11-08 19:25:43.623 GMT 0003 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 payload:"{\"parcelId\":\"GA-001\",\"saltedHash\":\"abc123\",\"allowedMSPs\":[\"Org1MSP\",\"Org2MSP\"],\"registeredBy\":\"Org1MSP\",\"registeredAt\":\"2026-11-08T19:25:41.500Z\"}" 
+
+$ hinvoke {"function":"RegisterData","Args":["GA-001","abc123","Org1MSP,Org2MSP"]}  # 2026-11-08T19:25:51Z
+Error: endorsement failure during invoke. response: status:500 message:"Parcel GA-001 is already registered" 
+
+$ hinvoke {"function":"RequestAccess","Args":["GA-001","manual-test"]}  # 2026-11-08T19:26:04Z
+[34m2026-11-08 19:26:06.510 GMT 0001 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [e34c611d1c831f48e6c98790214c272afaeb1d4fd5f353226a2de54d2a2d36bb] committed with status (VALID) at localhost:7051
+[34m2026-11-08 19:26:06.511 GMT 0002 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [e34c611d1c831f48e6c98790214c272afaeb1d4fd5f353226a2de54d2a2d36bb] committed with status (VALID) at localhost:9051
+[34m2026-11-08 19:26:06.511 GMT 0003 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 payload:"{\"parcelId\":\"GA-001\",\"granted\":true,\"saltedHash\":\"abc123\"}" 
+
+$ hquery {"function":"QueryAuditTrail","Args":["GA-001"]}  # 2026-11-08T19:26:52Z
+[{"action":"REGISTER","at":"2026-11-08T19:25:41.500Z","by":"Org1MSP","outcome":"GRANTED","parcelId":"GA-001"},{"action":"ACCESS:manual-test","at":"2026-11-08T19:26:04.462Z","by":"Org1MSP","outcome":"GRANTED","parcelId":"GA-001"}]

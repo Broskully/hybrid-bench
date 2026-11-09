@@ -1,0 +1,30 @@
+test:
+  name: hybrid-registry-benchmark
+  description: Registration, access and audit on the hybrid design
+  workers:
+    number: 4
+  rounds:
+    - label: register-25tps
+      txDuration: 60
+      rateControl: { type: fixed-rate, opts: { tps: 25 } }
+      workload: { module: workload/register.js }
+    - label: register-50tps
+      txDuration: 60
+      rateControl: { type: fixed-rate, opts: { tps: 50 } }
+      workload: { module: workload/register.js }
+    - label: register-100tps
+      txDuration: 60
+      rateControl: { type: fixed-rate, opts: { tps: 100 } }
+      workload: { module: workload/register.js }
+    - label: register-200tps
+      txDuration: 60
+      rateControl: { type: fixed-rate, opts: { tps: 200 } }
+      workload: { module: workload/register.js }
+    - label: access-50tps
+      txDuration: 60
+      rateControl: { type: fixed-rate, opts: { tps: 50 } }
+      workload: { module: workload/access.js, arguments: { parcels: 50, fn: RequestAccess } }
+    - label: audit-100tps
+      txDuration: 60
+      rateControl: { type: fixed-rate, opts: { tps: 100 } }
+      workload: { module: workload/access.js, arguments: { parcels: 50, fn: QueryAuditTrail } }

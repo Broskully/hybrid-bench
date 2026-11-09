@@ -1,0 +1,14 @@
+$ docker exec pg pgbench -U postgres -n -f /register.sql -c 10 -T 60 postgres  # 2026-11-08T22:09:11Z
+pgbench (16.15 (Debian 16.15-1.pgdg13+2))
+transaction type: /register.sql
+scaling factor: 1
+query mode: simple
+number of clients: 10
+number of threads: 1
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 517538
+number of failed transactions: 0 (0.000%)
+latency average = 1.159 ms
+initial connection time = 12.222 ms
+tps = 8626.738850 (without initial connection time)

@@ -1,0 +1,11 @@
+# Fabric download and its generated keys and certificates
+fabric-samples/
+organizations/
+keystore/
+priv_sk
+*_sk
+*.key
+*.pem
+
+# Downloaded libraries
+node_modules/

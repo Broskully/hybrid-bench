@@ -1,0 +1,748 @@
+2026.11.08-21:10:54.846[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/maximusdebois/hybrid-bench/caliper-workspace
+2026.11.08-21:10:54.847[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/benchmarks/hybrid.yaml
+2026.11.08-21:10:54.847[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/networks/networkConfig.yaml
+2026.11.08-21:10:54.847[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: fabric
+2026.11.08-21:10:54.853[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2026.11.08-21:10:54.853[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2026.11.08-21:10:54.853[32m info [39m [caliper] [caliper-engine] 	Skipping start commands due to benchmark flow conditioning
+2026.11.08-21:10:54.853[32m info [39m [caliper] [caliper-engine] 	Skipping initialization phase due to benchmark flow conditioning
+2026.11.08-21:10:54.853[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2026.11.08-21:10:55.102[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.11.08-21:10:55.111[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.11.08-21:10:55.112[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2026.11.08-21:10:55.113[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2026.11.08-21:10:55.116[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2026.11.08-21:10:55.116[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 4
+2026.11.08-21:10:55.119[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 2 of 4
+2026.11.08-21:10:55.120[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 3 of 4
+2026.11.08-21:10:55.123[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 4 of 4
+2026.11.08-21:10:55.126[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2026.11.08-21:10:55.126[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2026.11.08-21:10:55.126[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 4 workers to be connected...
+2026.11.08-21:10:55.302[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/maximusdebois/hybrid-bench/caliper-workspace
+2026.11.08-21:10:55.303[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/benchmarks/hybrid.yaml
+2026.11.08-21:10:55.303[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/networks/networkConfig.yaml
+2026.11.08-21:10:55.303[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.11.08-21:10:55.312[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/maximusdebois/hybrid-bench/caliper-workspace
+2026.11.08-21:10:55.313[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/benchmarks/hybrid.yaml
+2026.11.08-21:10:55.313[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/networks/networkConfig.yaml
+2026.11.08-21:10:55.314[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.11.08-21:10:55.322[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/maximusdebois/hybrid-bench/caliper-workspace
+2026.11.08-21:10:55.323[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/benchmarks/hybrid.yaml
+2026.11.08-21:10:55.323[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/networks/networkConfig.yaml
+2026.11.08-21:10:55.323[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.11.08-21:10:55.347[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/maximusdebois/hybrid-bench/caliper-workspace
+2026.11.08-21:10:55.347[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/benchmarks/hybrid.yaml
+2026.11.08-21:10:55.347[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/maximusdebois/hybrid-bench/caliper-workspace/networks/networkConfig.yaml
+2026.11.08-21:10:55.348[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.11.08-21:10:55.379[32m info [39m [caliper] [worker-orchestrator] 	4 workers connected, progressing to worker assignment phase.
+2026.11.08-21:10:55.379[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2026.11.08-21:10:55.380[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 4 workers to be assigned...
+2026.11.08-21:10:55.387[32m info [39m [caliper] [worker-orchestrator] 	4 workers assigned, progressing to worker initialization phase.
+2026.11.08-21:10:55.387[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 4 workers to be ready...
+2026.11.08-21:10:55.388[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2026.11.08-21:10:55.388[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#2...
+2026.11.08-21:10:55.388[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#1...
+2026.11.08-21:10:55.388[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#3...
+2026.11.08-21:10:55.738[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.11.08-21:10:55.743[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.11.08-21:10:55.743[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.11.08-21:10:55.745[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.11.08-21:10:55.747[32m info [39m [caliper] [worker-message-handler] 	Worker#2 initialized
+2026.11.08-21:10:55.748[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.11.08-21:10:55.749[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.11.08-21:10:55.751[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2026.11.08-21:10:55.753[32m info [39m [caliper] [worker-message-handler] 	Worker#1 initialized
+2026.11.08-21:10:55.760[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.11.08-21:10:55.764[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.11.08-21:10:55.769[32m info [39m [caliper] [worker-message-handler] 	Worker#3 initialized
+2026.11.08-21:10:55.770[32m info [39m [caliper] [worker-orchestrator] 	4 workers ready, progressing to test preparation phase.
+2026.11.08-21:10:55.770[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (register-25tps)
+2026.11.08-21:10:55.772[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#0
+2026.11.08-21:10:55.771[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2026.11.08-21:10:55.772[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#0
+2026.11.08-21:10:55.772[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#0
+2026.11.08-21:10:55.778[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.778[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.778[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.778[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 0 is starting...
+2026.11.08-21:10:55.778[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 0 is starting...
+2026.11.08-21:10:55.780[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:10:55.780[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:10:55.780[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 0 is completed
+2026.11.08-21:10:55.780[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#0
+2026.11.08-21:10:55.780[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:10:55.780[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:10:55.780[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 0 is completed
+2026.11.08-21:10:55.780[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#0
+2026.11.08-21:10:55.781[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is starting...
+2026.11.08-21:10:55.783[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:10:55.783[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:10:55.783[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is completed
+2026.11.08-21:10:55.783[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#0
+2026.11.08-21:10:55.784[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.784[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2026.11.08-21:10:55.786[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:10:55.786[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:10:55.786[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2026.11.08-21:10:55.786[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2026.11.08-21:10:55.787[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:10:55.787[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:10:55.788[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2026.11.08-21:10:55.788[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#0
+2026.11.08-21:10:55.788[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#0
+2026.11.08-21:10:55.788[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#0
+2026.11.08-21:10:55.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.790[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.790[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:10:55.790[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+(node:27859) TimeoutNegativeWarning: -1 is a negative number.
+Timeout duration was set to 1.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026.11.08-21:10:55.791[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+(node:27860) TimeoutNegativeWarning: -1 is a negative number.
+Timeout duration was set to 1.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026.11.08-21:10:55.791[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:10:55.791[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+(node:27862) TimeoutNegativeWarning: -1 is a negative number.
+Timeout duration was set to 1.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27861) TimeoutNegativeWarning: -1 is a negative number.
+Timeout duration was set to 1.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026.11.08-21:11:00.793[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 101 Succ: 100 Fail:0 Unfinished:1
+2026.11.08-21:11:05.789[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 228 Succ: 220 Fail:0 Unfinished:8
+2026.11.08-21:11:10.790[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 352 Succ: 350 Fail:0 Unfinished:2
+2026.11.08-21:11:15.791[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 476 Succ: 470 Fail:0 Unfinished:6
+2026.11.08-21:11:20.792[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 604 Succ: 600 Fail:0 Unfinished:4
+2026.11.08-21:11:25.792[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 728 Succ: 720 Fail:0 Unfinished:8
+2026.11.08-21:11:30.792[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 852 Succ: 840 Fail:0 Unfinished:12
+2026.11.08-21:11:35.793[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 976 Succ: 970 Fail:0 Unfinished:6
+2026.11.08-21:11:40.793[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 1104 Succ: 1100 Fail:0 Unfinished:4
+2026.11.08-21:11:45.795[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 1228 Succ: 1220 Fail:0 Unfinished:8
+2026.11.08-21:11:50.797[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 1352 Succ: 1350 Fail:0 Unfinished:2
+2026.11.08-21:11:55.799[32m info [39m [caliper] [default-observer] 	[register-25tps Round 0 Transaction Info] - Submitted: 1476 Succ: 1470 Fail:0 Unfinished:6
+2026.11.08-21:11:58.904[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:11:58.904[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:11:58.905[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:11:58.905[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:11:58.905[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:11:58.905[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2026.11.08-21:11:58.905[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:11:58.905[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#0
+2026.11.08-21:11:58.905[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#0
+2026.11.08-21:11:58.907[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:11:58.907[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:11:58.907[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#0
+2026.11.08-21:12:03.910[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:12:03.911[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:12:03.915[32m info [39m [caliper] [report-builder] 	
++----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name           | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-25tps | 1504 | 0    | 25.1            | 2.07            | 0.05            | 0.24            | 24.2             |
++----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:12:03.915[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (register-25tps) in 62.116 seconds
+2026.11.08-21:12:03.916[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:12:03.916[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:12:08.919[32m info [39m [caliper] [round-orchestrator] 	Started round 2 (register-50tps)
+2026.11.08-21:12:08.919[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#1
+2026.11.08-21:12:08.920[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#1
+2026.11.08-21:12:08.920[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#1
+2026.11.08-21:12:08.920[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#1
+2026.11.08-21:12:08.921[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.921[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is starting...
+2026.11.08-21:12:08.922[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.922[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 1 is starting...
+2026.11.08-21:12:08.922[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.922[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is starting...
+2026.11.08-21:12:08.922[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.922[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:12:08.923[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:12:08.923[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is completed
+2026.11.08-21:12:08.923[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 1 is starting...
+2026.11.08-21:12:08.923[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#1
+2026.11.08-21:12:08.923[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:12:08.923[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:12:08.923[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 1 is completed
+2026.11.08-21:12:08.923[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#1
+2026.11.08-21:12:08.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:12:08.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:12:08.924[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is completed
+2026.11.08-21:12:08.924[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#1
+2026.11.08-21:12:08.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:12:08.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:12:08.924[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 1 is completed
+2026.11.08-21:12:08.924[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#1
+2026.11.08-21:12:08.924[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:12:08.924[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:12:08.925[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#1
+2026.11.08-21:12:08.925[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#1
+2026.11.08-21:12:08.925[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#1
+2026.11.08-21:12:08.925[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#1
+2026.11.08-21:12:08.926[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.926[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.926[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:12:08.926[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:12:08.927[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.927[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:12:08.927[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:12:08.927[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:12:13.925[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 203 Succ: 190 Fail:0 Unfinished:13
+2026.11.08-21:12:18.926[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 452 Succ: 440 Fail:0 Unfinished:12
+2026.11.08-21:12:23.927[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 704 Succ: 700 Fail:0 Unfinished:4
+2026.11.08-21:12:28.927[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 952 Succ: 940 Fail:0 Unfinished:12
+2026.11.08-21:12:33.928[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 1204 Succ: 1200 Fail:0 Unfinished:4
+2026.11.08-21:12:38.929[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 1452 Succ: 1443 Fail:0 Unfinished:9
+2026.11.08-21:12:43.930[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 1704 Succ: 1700 Fail:0 Unfinished:4
+2026.11.08-21:12:48.932[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 1952 Succ: 1940 Fail:0 Unfinished:12
+2026.11.08-21:12:53.932[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 2204 Succ: 2200 Fail:0 Unfinished:4
+2026.11.08-21:12:58.933[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 2452 Succ: 2442 Fail:0 Unfinished:10
+2026.11.08-21:13:03.934[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 2704 Succ: 2700 Fail:0 Unfinished:4
+2026.11.08-21:13:08.935[32m info [39m [caliper] [default-observer] 	[register-50tps Round 1 Transaction Info] - Submitted: 2952 Succ: 2946 Fail:0 Unfinished:6
+2026.11.08-21:13:12.034[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:12.035[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:12.035[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:12.035[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:12.036[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:12.036[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:12.036[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#1
+2026.11.08-21:13:12.036[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:12.037[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:12.037[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#1
+2026.11.08-21:13:12.038[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#1
+2026.11.08-21:13:12.038[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#1
+2026.11.08-21:13:17.046[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:13:17.047[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:13:17.049[32m info [39m [caliper] [report-builder] 	
++----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name           | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-50tps | 3004 | 0    | 50.1            | 2.07            | 0.05            | 0.16            | 48.4             |
++----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:13:17.049[32m info [39m [caliper] [round-orchestrator] 	Finished round 2 (register-50tps) in 62.108 seconds
+2026.11.08-21:13:17.049[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:13:17.049[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:13:22.050[32m info [39m [caliper] [round-orchestrator] 	Started round 3 (register-100tps)
+2026.11.08-21:13:22.051[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#2
+2026.11.08-21:13:22.052[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#2
+2026.11.08-21:13:22.052[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#2
+2026.11.08-21:13:22.052[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#2
+2026.11.08-21:13:22.056[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.056[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.056[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.056[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.056[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is starting...
+2026.11.08-21:13:22.057[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 2 is starting...
+2026.11.08-21:13:22.057[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 2 is starting...
+2026.11.08-21:13:22.057[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is starting...
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:22.058[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is completed
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:22.058[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#2
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:22.058[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 2 is completed
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:13:22.058[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 2 is completed
+2026.11.08-21:13:22.058[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:13:22.058[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#2
+2026.11.08-21:13:22.058[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#2
+2026.11.08-21:13:22.058[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is completed
+2026.11.08-21:13:22.058[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#2
+2026.11.08-21:13:22.059[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:13:22.059[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:13:22.059[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#2
+2026.11.08-21:13:22.059[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#2
+2026.11.08-21:13:22.059[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#2
+2026.11.08-21:13:22.060[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#2
+2026.11.08-21:13:22.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.060[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:13:22.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:13:22.061[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:13:22.061[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:13:22.061[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:13:27.060[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 403 Succ: 390 Fail:0 Unfinished:13
+2026.11.08-21:13:32.062[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 904 Succ: 890 Fail:0 Unfinished:14
+2026.11.08-21:13:37.064[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 1404 Succ: 1390 Fail:0 Unfinished:14
+2026.11.08-21:13:42.064[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 1904 Succ: 1890 Fail:0 Unfinished:14
+2026.11.08-21:13:47.064[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 2404 Succ: 2390 Fail:0 Unfinished:14
+2026.11.08-21:13:52.065[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 2904 Succ: 2890 Fail:0 Unfinished:14
+2026.11.08-21:13:57.065[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 3404 Succ: 3390 Fail:0 Unfinished:14
+2026.11.08-21:14:02.065[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 3904 Succ: 3890 Fail:0 Unfinished:14
+2026.11.08-21:14:07.064[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 4404 Succ: 4390 Fail:0 Unfinished:14
+2026.11.08-21:14:12.064[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 4904 Succ: 4880 Fail:0 Unfinished:24
+2026.11.08-21:14:17.065[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 5404 Succ: 5390 Fail:0 Unfinished:14
+2026.11.08-21:14:22.065[32m info [39m [caliper] [default-observer] 	[register-100tps Round 2 Transaction Info] - Submitted: 5904 Succ: 5890 Fail:0 Unfinished:14
+2026.11.08-21:14:25.170[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:25.170[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:25.171[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#2
+2026.11.08-21:14:25.171[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:25.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:25.173[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#2
+2026.11.08-21:14:25.175[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:25.176[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:25.177[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:25.177[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:25.177[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#2
+2026.11.08-21:14:25.178[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#2
+2026.11.08-21:14:30.182[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:14:30.183[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:14:30.184[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-100tps | 6004 | 0    | 100.1           | 2.08            | 0.06            | 0.15            | 96.7             |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:14:30.184[32m info [39m [caliper] [round-orchestrator] 	Finished round 3 (register-100tps) in 62.116 seconds
+2026.11.08-21:14:30.184[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:14:30.184[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:14:35.187[32m info [39m [caliper] [round-orchestrator] 	Started round 4 (register-125tps)
+2026.11.08-21:14:35.189[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#3
+2026.11.08-21:14:35.189[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#3
+2026.11.08-21:14:35.190[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#3
+2026.11.08-21:14:35.191[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#3
+2026.11.08-21:14:35.196[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.196[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.196[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 3 is starting...
+2026.11.08-21:14:35.196[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.196[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.197[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 3 is starting...
+2026.11.08-21:14:35.197[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 3 is starting...
+2026.11.08-21:14:35.197[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 3 is starting...
+2026.11.08-21:14:35.197[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:35.198[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 3 is completed
+2026.11.08-21:14:35.198[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#3
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:14:35.198[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:14:35.198[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 3 is completed
+2026.11.08-21:14:35.198[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 3 is completed
+2026.11.08-21:14:35.198[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#3
+2026.11.08-21:14:35.198[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#3
+2026.11.08-21:14:35.198[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 3 is completed
+2026.11.08-21:14:35.198[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#3
+2026.11.08-21:14:35.199[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:14:35.199[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:14:35.200[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#3
+2026.11.08-21:14:35.201[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#3
+2026.11.08-21:14:35.201[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#3
+2026.11.08-21:14:35.201[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#3
+2026.11.08-21:14:35.202[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.202[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:14:35.203[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.203[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.203[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:14:35.203[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:14:35.204[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:14:35.204[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:14:40.201[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 503 Succ: 470 Fail:0 Unfinished:33
+2026.11.08-21:14:45.200[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 1128 Succ: 1077 Fail:0 Unfinished:51
+2026.11.08-21:14:50.201[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 1753 Succ: 1660 Fail:0 Unfinished:93
+2026.11.08-21:14:55.202[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 2379 Succ: 2280 Fail:0 Unfinished:99
+2026.11.08-21:15:00.203[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 3004 Succ: 2860 Fail:0 Unfinished:144
+2026.11.08-21:15:05.205[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 3628 Succ: 3410 Fail:0 Unfinished:218
+2026.11.08-21:15:10.204[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 4256 Succ: 3967 Fail:0 Unfinished:289
+2026.11.08-21:15:15.205[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 4881 Succ: 4500 Fail:0 Unfinished:381
+2026.11.08-21:15:20.205[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 5507 Succ: 5040 Fail:0 Unfinished:467
+2026.11.08-21:15:25.206[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 6132 Succ: 5560 Fail:0 Unfinished:572
+2026.11.08-21:15:30.212[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 6758 Succ: 6080 Fail:0 Unfinished:678
+2026.11.08-21:15:35.212[32m info [39m [caliper] [default-observer] 	[register-125tps Round 3 Transaction Info] - Submitted: 7382 Succ: 6587 Fail:0 Unfinished:795
+2026.11.08-21:15:40.109[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:40.110[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:40.110[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#3
+2026.11.08-21:15:40.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:40.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:40.115[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#3
+2026.11.08-21:15:40.213[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:15:40.213[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:40.213[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:40.214[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#3
+2026.11.08-21:15:40.215[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:40.215[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:40.216[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#3
+2026.11.08-21:15:45.216[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:15:45.217[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:15:45.217[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-125tps | 7504 | 0    | 125.1           | 6.62            | 0.06            | 2.61            | 117.4            |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:15:45.218[32m info [39m [caliper] [round-orchestrator] 	Finished round 4 (register-125tps) in 64.011 seconds
+2026.11.08-21:15:45.218[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:15:45.218[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:15:50.222[32m info [39m [caliper] [round-orchestrator] 	Started round 5 (register-150tps)
+2026.11.08-21:15:50.223[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#4
+2026.11.08-21:15:50.223[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#4
+2026.11.08-21:15:50.224[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#4
+2026.11.08-21:15:50.224[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#4
+2026.11.08-21:15:50.231[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.231[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.232[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 4 is starting...
+2026.11.08-21:15:50.232[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.232[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 4 is starting...
+2026.11.08-21:15:50.233[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 4 is starting...
+2026.11.08-21:15:50.233[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.233[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:50.234[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:50.234[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 4 is completed
+2026.11.08-21:15:50.234[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#4
+2026.11.08-21:15:50.234[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:50.234[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:50.234[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:50.234[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 4 is completed
+2026.11.08-21:15:50.234[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#4
+2026.11.08-21:15:50.235[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 4 is starting...
+2026.11.08-21:15:50.237[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:15:50.237[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:50.237[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 4 is completed
+2026.11.08-21:15:50.237[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#4
+2026.11.08-21:15:50.234[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:15:50.238[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 4 is completed
+2026.11.08-21:15:50.238[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#4
+2026.11.08-21:15:50.238[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:15:50.239[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:15:50.239[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#4
+2026.11.08-21:15:50.239[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#4
+2026.11.08-21:15:50.241[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.241[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.241[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:15:50.241[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:15:50.241[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#4
+2026.11.08-21:15:50.241[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#4
+2026.11.08-21:15:50.242[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.242[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:15:50.243[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:15:50.243[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:15:55.240[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 600 Succ: 410 Fail:0 Unfinished:190
+2026.11.08-21:16:00.242[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 1353 Succ: 940 Fail:0 Unfinished:413
+2026.11.08-21:16:05.243[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 2104 Succ: 1443 Fail:0 Unfinished:661
+2026.11.08-21:16:10.243[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 2856 Succ: 1928 Fail:0 Unfinished:928
+2026.11.08-21:16:15.244[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 3608 Succ: 2400 Fail:0 Unfinished:1208
+2026.11.08-21:16:20.243[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 4359 Succ: 2870 Fail:0 Unfinished:1489
+2026.11.08-21:16:25.245[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 5108 Succ: 3250 Fail:0 Unfinished:1858
+2026.11.08-21:16:30.245[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 5863 Succ: 3600 Fail:0 Unfinished:2263
+2026.11.08-21:16:35.245[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 6615 Succ: 3940 Fail:0 Unfinished:2675
+2026.11.08-21:16:40.246[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 7369 Succ: 4298 Fail:0 Unfinished:3071
+2026.11.08-21:16:45.248[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 8122 Succ: 4640 Fail:0 Unfinished:3482
+2026.11.08-21:16:50.248[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 8874 Succ: 4980 Fail:0 Unfinished:3894
+2026.11.08-21:16:55.248[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 9004 Succ: 5830 Fail:0 Unfinished:3174
+2026.11.08-21:17:00.248[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 9004 Succ: 6880 Fail:0 Unfinished:2124
+2026.11.08-21:17:05.249[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 9004 Succ: 7776 Fail:0 Unfinished:1228
+2026.11.08-21:17:10.250[32m info [39m [caliper] [default-observer] 	[register-150tps Round 4 Transaction Info] - Submitted: 9004 Succ: 9004 Fail:0 Unfinished:0
+2026.11.08-21:17:11.085[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:11.086[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:11.087[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#4
+2026.11.08-21:17:11.098[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:11.099[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:11.100[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#4
+2026.11.08-21:17:11.101[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:11.101[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:11.101[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#4
+2026.11.08-21:17:11.101[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:11.101[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:11.102[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#4
+2026.11.08-21:17:16.103[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:17:16.104[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:17:16.105[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-150tps | 9004 | 0    | 150.0           | 26.52           | 0.07            | 16.05           | 112.8            |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:17:16.105[32m info [39m [caliper] [round-orchestrator] 	Finished round 5 (register-150tps) in 79.859 seconds
+2026.11.08-21:17:16.105[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:17:16.105[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:17:21.110[32m info [39m [caliper] [round-orchestrator] 	Started round 6 (register-200tps)
+2026.11.08-21:17:21.111[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#5
+2026.11.08-21:17:21.111[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#5
+2026.11.08-21:17:21.111[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#5
+2026.11.08-21:17:21.111[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#5
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.115[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 5 is starting...
+2026.11.08-21:17:21.115[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 5 is starting...
+2026.11.08-21:17:21.115[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 5 is starting...
+2026.11.08-21:17:21.115[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 5 is starting...
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:21.115[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:21.115[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 5 is completed
+2026.11.08-21:17:21.115[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#5
+2026.11.08-21:17:21.115[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 5 is completed
+2026.11.08-21:17:21.115[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#5
+2026.11.08-21:17:21.116[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:21.116[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:21.116[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:17:21.116[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:17:21.116[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 5 is completed
+2026.11.08-21:17:21.116[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#5
+2026.11.08-21:17:21.116[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 5 is completed
+2026.11.08-21:17:21.116[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#5
+2026.11.08-21:17:21.116[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:17:21.117[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:17:21.117[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#5
+2026.11.08-21:17:21.117[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#5
+2026.11.08-21:17:21.117[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#5
+2026.11.08-21:17:21.117[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#5
+2026.11.08-21:17:21.118[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.118[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.118[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.118[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:17:21.118[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:17:21.118[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:17:21.118[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:17:21.118[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:17:26.118[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 805 Succ: 290 Fail:0 Unfinished:515
+2026.11.08-21:17:31.120[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 1808 Succ: 520 Fail:0 Unfinished:1288
+2026.11.08-21:17:36.121[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 2810 Succ: 800 Fail:0 Unfinished:2010
+2026.11.08-21:17:41.121[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 3814 Succ: 1120 Fail:0 Unfinished:2694
+2026.11.08-21:17:46.120[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 4816 Succ: 1400 Fail:0 Unfinished:3416
+2026.11.08-21:17:51.124[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 5816 Succ: 1691 Fail:0 Unfinished:4125
+2026.11.08-21:17:56.124[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 6820 Succ: 1961 Fail:0 Unfinished:4859
+2026.11.08-21:18:01.125[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 7821 Succ: 2214 Fail:0 Unfinished:5607
+2026.11.08-21:18:06.125[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 8813 Succ: 2460 Fail:0 Unfinished:6353
+2026.11.08-21:18:11.125[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 9825 Succ: 2754 Fail:0 Unfinished:7071
+2026.11.08-21:18:16.125[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 10830 Succ: 2990 Fail:0 Unfinished:7840
+2026.11.08-21:18:21.128[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 11835 Succ: 3187 Fail:0 Unfinished:8648
+2026.11.08-21:18:26.128[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 4008 Fail:0 Unfinished:7995
+2026.11.08-21:18:31.129[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 4959 Fail:0 Unfinished:7044
+2026.11.08-21:18:36.130[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 5866 Fail:0 Unfinished:6137
+2026.11.08-21:18:41.132[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 6831 Fail:0 Unfinished:5172
+2026.11.08-21:18:46.132[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 7753 Fail:0 Unfinished:4250
+2026.11.08-21:18:51.133[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 8731 Fail:0 Unfinished:3272
+2026.11.08-21:18:56.133[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 9635 Fail:0 Unfinished:2368
+2026.11.08-21:19:01.133[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 10557 Fail:0 Unfinished:1446
+2026.11.08-21:19:06.134[32m info [39m [caliper] [default-observer] 	[register-200tps Round 5 Transaction Info] - Submitted: 12003 Succ: 11488 Fail:0 Unfinished:515
+2026.11.08-21:19:08.410[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:19:08.410[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:19:08.411[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#5
+2026.11.08-21:19:08.417[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:19:08.417[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:19:08.419[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#5
+2026.11.08-21:19:08.445[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:19:08.445[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:19:08.446[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#5
+2026.11.08-21:19:08.501[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:19:08.501[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:19:08.501[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#5
+2026.11.08-21:19:13.504[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:19:13.505[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:19:13.506[32m info [39m [caliper] [report-builder] 	
++-----------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-200tps | 12003 | 0    | 200.0           | 47.20           | 0.15            | 38.60           | 112.9            |
++-----------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:19:13.506[32m info [39m [caliper] [round-orchestrator] 	Finished round 6 (register-200tps) in 106.382 seconds
+2026.11.08-21:19:13.507[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:19:13.507[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:19:18.511[32m info [39m [caliper] [round-orchestrator] 	Started round 7 (access-50tps)
+2026.11.08-21:19:18.512[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#6
+2026.11.08-21:19:18.512[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#6
+2026.11.08-21:19:18.512[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#6
+2026.11.08-21:19:18.512[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#6
+2026.11.08-21:19:18.520[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:19:18.520[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:19:18.520[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:19:18.520[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 6 is starting...
+2026.11.08-21:19:18.520[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:19:18.520[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 6 is starting...
+2026.11.08-21:19:18.520[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 6 is starting...
+2026.11.08-21:19:18.520[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 6 is starting...
+2026.11.08-21:21:02.059[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:21:02.059[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:21:02.059[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:21:02.059[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:21:02.059[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 6 is completed
+2026.11.08-21:21:02.059[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#6
+2026.11.08-21:21:02.060[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 6 is completed
+2026.11.08-21:21:02.060[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#6
+2026.11.08-21:21:02.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:21:02.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:21:02.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:21:02.060[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 6 is completed
+2026.11.08-21:21:02.060[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#6
+2026.11.08-21:21:02.060[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:21:02.061[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 6 is completed
+2026.11.08-21:21:02.061[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#6
+2026.11.08-21:21:02.061[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:21:02.061[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:21:02.062[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#6
+2026.11.08-21:21:02.063[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#6
+2026.11.08-21:21:02.063[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#6
+2026.11.08-21:21:02.063[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:21:02.063[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:21:02.064[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:21:02.064[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:21:02.064[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:21:02.064[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:21:02.065[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#6
+2026.11.08-21:21:02.066[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:21:02.066[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:21:07.062[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 202 Succ: 200 Fail:0 Unfinished:2
+2026.11.08-21:21:12.063[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 452 Succ: 440 Fail:0 Unfinished:12
+2026.11.08-21:21:17.065[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 704 Succ: 700 Fail:0 Unfinished:4
+2026.11.08-21:21:22.068[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 965 Succ: 955 Fail:0 Unfinished:10
+2026.11.08-21:21:27.069[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 1216 Succ: 1210 Fail:0 Unfinished:6
+2026.11.08-21:21:32.069[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 1465 Succ: 1455 Fail:0 Unfinished:10
+2026.11.08-21:21:37.069[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 1716 Succ: 1710 Fail:0 Unfinished:6
+2026.11.08-21:21:42.070[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 1965 Succ: 1955 Fail:0 Unfinished:10
+2026.11.08-21:21:47.070[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 2216 Succ: 2202 Fail:0 Unfinished:14
+2026.11.08-21:21:52.072[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 2465 Succ: 2453 Fail:0 Unfinished:12
+2026.11.08-21:21:57.072[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 2716 Succ: 2710 Fail:0 Unfinished:6
+2026.11.08-21:22:02.073[32m info [39m [caliper] [default-observer] 	[access-50tps Round 6 Transaction Info] - Submitted: 2965 Succ: 2960 Fail:0 Unfinished:5
+2026.11.08-21:22:05.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:22:05.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:22:05.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:22:05.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:22:05.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:22:05.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:22:05.172[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#6
+2026.11.08-21:22:05.172[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#6
+2026.11.08-21:22:05.173[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#6
+2026.11.08-21:22:05.175[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:22:05.175[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:22:05.176[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#6
+2026.11.08-21:22:10.180[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:22:10.180[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:22:10.181[32m info [39m [caliper] [report-builder] 	
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name         | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|--------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| access-50tps | 3004 | 0    | 50.1            | 2.06            | 0.05            | 0.15            | 48.4             |
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:22:10.181[32m info [39m [caliper] [round-orchestrator] 	Finished round 7 (access-50tps) in 62.111 seconds
+2026.11.08-21:22:10.181[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:22:10.181[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.11.08-21:22:15.187[32m info [39m [caliper] [round-orchestrator] 	Started round 8 (audit-100tps)
+2026.11.08-21:22:15.188[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#7
+2026.11.08-21:22:15.188[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#7
+2026.11.08-21:22:15.188[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#2 for Round#7
+2026.11.08-21:22:15.189[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#3 for Round#7
+2026.11.08-21:22:15.195[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:22:15.195[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:22:15.195[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:22:15.195[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:22:15.195[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 7 is starting...
+2026.11.08-21:22:15.195[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 7 is starting...
+2026.11.08-21:22:15.195[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 7 is starting...
+2026.11.08-21:22:15.195[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 7 is starting...
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:23:58.469[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 7 is completed
+2026.11.08-21:23:58.469[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#7
+2026.11.08-21:23:58.469[32m info [39m [caliper] [caliper-worker] 	Info: worker 3 prepare test phase for round 7 is completed
+2026.11.08-21:23:58.469[32m info [39m [caliper] [worker-message-handler] 	Worker#3 prepared for Round#7
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:23:58.469[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:23:58.470[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:23:58.470[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 7 is completed
+2026.11.08-21:23:58.470[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#7
+2026.11.08-21:23:58.470[32m info [39m [caliper] [caliper-worker] 	Info: worker 2 prepare test phase for round 7 is completed
+2026.11.08-21:23:58.470[32m info [39m [caliper] [worker-message-handler] 	Worker#2 prepared for Round#7
+2026.11.08-21:23:58.471[32m info [39m [caliper] [worker-orchestrator] 	4 workers prepared, progressing to test phase.
+2026.11.08-21:23:58.471[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.08-21:23:58.472[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#7
+2026.11.08-21:23:58.472[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#7
+2026.11.08-21:23:58.472[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is starting Round#7
+2026.11.08-21:23:58.473[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:23:58.473[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:23:58.473[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.08-21:23:58.474[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:23:58.474[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.11.08-21:23:58.474[32m info [39m [caliper] [caliper-worker] 	Worker #2 starting workload loop
+2026.11.08-21:23:58.474[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is starting Round#7
+2026.11.08-21:23:58.476[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.11.08-21:23:58.476[32m info [39m [caliper] [caliper-worker] 	Worker #3 starting workload loop
+2026.11.08-21:24:03.472[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 404 Succ: 400 Fail:0 Unfinished:4
+2026.11.08-21:24:08.472[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 904 Succ: 900 Fail:0 Unfinished:4
+2026.11.08-21:24:13.474[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 1404 Succ: 1400 Fail:0 Unfinished:4
+2026.11.08-21:24:18.475[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 1904 Succ: 1900 Fail:0 Unfinished:4
+2026.11.08-21:24:23.475[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 2404 Succ: 2401 Fail:0 Unfinished:3
+2026.11.08-21:24:28.476[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 2904 Succ: 2900 Fail:0 Unfinished:4
+2026.11.08-21:24:33.479[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 3404 Succ: 3400 Fail:0 Unfinished:4
+2026.11.08-21:24:38.480[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 3904 Succ: 3900 Fail:0 Unfinished:4
+2026.11.08-21:24:43.481[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 4404 Succ: 4400 Fail:0 Unfinished:4
+2026.11.08-21:24:48.482[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 4904 Succ: 4900 Fail:0 Unfinished:4
+2026.11.08-21:24:53.482[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 5404 Succ: 5403 Fail:0 Unfinished:1
+2026.11.08-21:24:58.484[32m info [39m [caliper] [default-observer] 	[audit-100tps Round 7 Transaction Info] - Submitted: 5904 Succ: 5902 Fail:0 Unfinished:2
+2026.11.08-21:24:59.582[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:24:59.582[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:24:59.583[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#7
+2026.11.08-21:24:59.583[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:24:59.583[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:24:59.583[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#7
+2026.11.08-21:24:59.584[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:24:59.584[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:24:59.585[32m info [39m [caliper] [worker-message-handler] 	Worker#3 finished Round#7
+2026.11.08-21:24:59.581[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.11.08-21:24:59.586[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.11.08-21:24:59.587[32m info [39m [caliper] [worker-message-handler] 	Worker#2 finished Round#7
+2026.11.08-21:25:04.591[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.08-21:25:04.591[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.11.08-21:25:04.592[32m info [39m [caliper] [report-builder] 	
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name         | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|--------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| audit-100tps | 6004 | 0    | 100.1           | 0.11            | 0.01            | 0.02            | 100.0            |
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:25:04.593[32m info [39m [caliper] [round-orchestrator] 	Finished round 8 (audit-100tps) in 60.109 seconds
+2026.11.08-21:25:04.593[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:25:04.594[32m info [39m [caliper] [report-builder] 	### All test results ###
+2026.11.08-21:25:04.597[32m info [39m [caliper] [report-builder] 	
++-----------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-25tps  | 1504  | 0    | 25.1            | 2.07            | 0.05            | 0.24            | 24.2             |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-50tps  | 3004  | 0    | 50.1            | 2.07            | 0.05            | 0.16            | 48.4             |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-100tps | 6004  | 0    | 100.1           | 2.08            | 0.06            | 0.15            | 96.7             |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-125tps | 7504  | 0    | 125.1           | 6.62            | 0.06            | 2.61            | 117.4            |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-150tps | 9004  | 0    | 150.0           | 26.52           | 0.07            | 16.05           | 112.8            |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| register-200tps | 12003 | 0    | 200.0           | 47.20           | 0.15            | 38.60           | 112.9            |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| access-50tps    | 3004  | 0    | 50.1            | 2.06            | 0.05            | 0.15            | 48.4             |
+|-----------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| audit-100tps    | 6004  | 0    | 100.1           | 0.11            | 0.01            | 0.02            | 100.0            |
++-----------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.08-21:25:04.607[32m info [39m [caliper] [report-builder] 	Generated report with path /home/maximusdebois/hybrid-bench/caliper-workspace/report.html
+2026.11.08-21:25:04.608[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.11.08-21:25:04.608[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2026.11.08-21:25:04.608[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 848.838 seconds. Total rounds: 8. Successful rounds: 8. Failed rounds: 0.
+2026.11.08-21:25:04.608[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
+2026.11.08-21:25:04.608[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is exiting
+2026.11.08-21:25:04.608[32m info [39m [caliper] [worker-message-handler] 	Worker#3 is exiting
+2026.11.08-21:25:04.609[32m info [39m [caliper] [worker-message-handler] 	Worker#2 is exiting
+2026.11.08-21:25:04.609[32m info [39m [caliper] [caliper-engine] 	Skipping end command due to benchmark flow conditioning
+2026.11.08-21:25:04.609[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished!

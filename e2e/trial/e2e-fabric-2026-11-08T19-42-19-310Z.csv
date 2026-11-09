@@ -1,0 +1,4 @@
+mode,size_bytes,run,hash_ms,offchain_ms,ledger_ms,total_ms
+fabric,10240,0,0.027,8.223,2359.162,2367.412
+fabric,1048576,0,0.534,13.233,2042.650,2056.417
+fabric,10485760,0,4.914,52.580,2055.264,2112.758

@@ -1,0 +1,143 @@
+Host: Windows 11, build 10.0.26300.9711
+CPU: 13th Gen Intel Core i7-1370P, 14 cores, 20 logical processors
+RAM: 16849256448 bytes
+WSL: 3.0.3.0, kernel 6.18.54.1-1
+.wslconfig: memory=8GB, processors=4
+Inside WSL: nproc 4, memory 7.8Gi, swap 2.0Gi
+Ubuntu: 24.04.5 LTS
+git 2.43.0, curl 8.5.0, jq-1.7 (package 1.7.1), gcc 13.3.0
+Docker client and server: 29.9.3
+Docker Compose: v5.7.0
+containerd: 2.4.2
+Disk C: 176G size, 135G used, 41G available
+Power: plugged in, mode: Best performance
+Storage: WD PC SN740 NVMe 512GB SSD (single physical drive)
+WSL virtual disk location: D:\WSL\Ubuntu-24.04
+nvm 0.41.0
+node v26.13.0
+npm 11.20.0
+
+$ uname -r  # 2026-11-08T18:51:56Z
+6.18.54.1-microsoft-standard-WSL2
+
+$ peer version  # 2026-11-08T19:01:45Z
+peer:
+ Version: v2.5.16
+ Commit SHA: f871cf9
+ Go version: go1.26.4
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+
+
+$ docker images --format "{{.Repository}}:{{.Tag}}" | grep hyperledger | sort  # 2026-11-08T19:01:52Z
+ghcr.io/hyperledger/fabric-baseos:2.5.16
+ghcr.io/hyperledger/fabric-ca:1.5.17
+ghcr.io/hyperledger/fabric-ccenv:2.5.16
+ghcr.io/hyperledger/fabric-orderer:2.5.16
+ghcr.io/hyperledger/fabric-peer:2.5.16
+hyperledger/fabric-baseos:2.5
+hyperledger/fabric-baseos:2.5.16
+hyperledger/fabric-baseos:latest
+hyperledger/fabric-ca:1.5
+hyperledger/fabric-ca:1.5.17
+hyperledger/fabric-ca:latest
+hyperledger/fabric-ccenv:2.5
+hyperledger/fabric-ccenv:2.5.16
+hyperledger/fabric-ccenv:latest
+hyperledger/fabric-orderer:2.5
+hyperledger/fabric-orderer:2.5.16
+hyperledger/fabric-orderer:latest
+hyperledger/fabric-peer:2.5
+hyperledger/fabric-peer:2.5.16
+hyperledger/fabric-peer:latest
+
+$ git -C ~/hybrid-bench/fabric-samples log -1 --format="%H %ci"  # 2026-11-08T19:02:00Z
+5789681b4f4d24e58fa40f19a69f5496892374b6 2026-09-18 10:27:37 +0100
+
+$ git -C ~/hybrid-bench/fabric-samples status -sb | head -1  # 2026-11-08T19:02:07Z
+## main...origin/main
+
+$ grep -nE "OrdererType|BatchTimeout|MaxMessageCount|AbsoluteMaxBytes|PreferredMaxBytes" configtx/configtx.yaml  # 2026-11-08T19:18:10Z
+188:  BatchTimeout: 2s
+192:    MaxMessageCount: 10
+195:    AbsoluteMaxBytes: 99 MB
+199:    PreferredMaxBytes: 512 KB
+264:      OrdererType: etcdraft
+
+$ docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "nodeenv|couchdb" | sort  # 2026-11-08T19:18:16Z
+couchdb:3.4.2
+hyperledger/fabric-nodeenv:2.5
+
+$ docker inspect --format "{{index .RepoDigests 0}}" hyperledger/fabric-nodeenv:2.5  # 2026-11-08T19:20:53Z
+hyperledger/fabric-nodeenv@sha256:17e2d447ca0de5b4e3f6950a1c9b24ecfdeecdd90e111e11d771970d35159bf1
+
+$ docker exec $(docker ps -q --filter name=dev-peer0.org1.example.com-hybrid) grep -m1 "\"version\"" /usr/local/src/node_modules/fabric-shim/package.json /usr/local/src/node_modules/fabric-contract-api/package.json  # 2026-11-08T19:23:51Z
+/usr/local/src/node_modules/fabric-shim/package.json:  "version": "2.5.8",
+/usr/local/src/node_modules/fabric-contract-api/package.json:  "version": "2.5.8",
+
+$ docker exec pg psql -U postgres -c "select version();"  # 2026-11-08T19:30:22Z
+                                                       version                                                        
+----------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 16.15 (Debian 16.15-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+(1 row)
+
+
+$ docker exec minio minio --version  # 2026-11-08T19:30:29Z
+Error response from daemon: No such container: minio
+
+$ docker inspect --format "{{index .RepoDigests 0}}" quay.io/minio/minio postgres:16  # 2026-11-08T19:30:41Z
+postgres@sha256:f9a7b9ebf6f56201f949db745e47bc423c0f0f8294bafe991cc10bf74b029657
+error: no such object: quay.io/minio/minio
+
+$ docker exec minio minio --version  # 2026-11-08T19:34:57Z
+minio version RELEASE.2026-08-04T00-00-00Z (commit-id=d88f46ccee345a9c2fabe2d221d9a9e56bc11aec)
+Runtime: go1.26.5 linux/amd64
+License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
+Copyright: 2015-2026 MinIO, Inc.
+
+$ docker inspect --format "{{index .RepoDigests 0}}" pgsty/minio:RELEASE.2026-08-04T00-00-00Z  # 2026-11-08T19:35:04Z
+pgsty/minio@sha256:b6bfe7239bfc83fb90d31612d9704d86039dd714f7904b3f1ad68f211e602372
+
+$ echo "Off-chain store deviation: quay.io/minio/minio returned 401 on 2026-11-08 and the upstream repository is archived; used community fork pgsty/minio instead."  # 2026-11-08T19:35:15Z
+Off-chain store deviation: quay.io/minio/minio returned 401 on 2026-11-08 and the upstream repository is archived; used community fork pgsty/minio instead.
+
+$ docker exec pg psql -U postgres -tc "show synchronous_commit"  # 2026-11-08T19:38:02Z
+ on
+
+
+$ docker exec pg psql -U postgres -tc "show fsync"  # 2026-11-08T19:38:10Z
+ on
+
+
+$ docker exec pg pgbench --version  # 2026-11-08T19:39:57Z
+pgbench (PostgreSQL) 16.15 (Debian 16.15-1.pgdg13+2)
+
+$ npm ls --depth=0  # 2026-11-08T19:42:37Z
+e2e@1.0.0 /home/maximusdebois/hybrid-bench/e2e
+├── @grpc/grpc-js@1.14.7
+├── @hyperledger/fabric-gateway@1.13.0
+├── minio@8.0.7
+└── pg@8.23.1
+
+
+$ npx caliper --version  # 2026-11-08T19:47:40Z
+0.6.0
+
+$ npm ls @hyperledger/fabric-gateway @grpc/grpc-js  # 2026-11-08T19:48:01Z
+caliper-workspace@1.0.0 /home/maximusdebois/hybrid-bench/caliper-workspace
+├── @grpc/grpc-js@1.10.3
+└─┬ @hyperledger/fabric-gateway@1.5.0
+  ├── @grpc/grpc-js@1.10.3 deduped
+  └─┬ @hyperledger/fabric-protos@0.3.7
+    └── @grpc/grpc-js@1.14.7
+
+
+$ npm ls --depth=0  # 2026-11-08T19:49:16Z
+caliper-workspace@1.0.0 /home/maximusdebois/hybrid-bench/caliper-workspace
+├── @grpc/grpc-js@1.10.3
+├── @hyperledger/caliper-cli@0.6.0
+└── @hyperledger/fabric-gateway@1.5.0
+
+Sustainable-rate criterion (set after one exploratory run on 2026-11-08, before the recorded runs): at least 99% success and throughput at least 95% of send rate. Added 125 and 150 TPS rounds.

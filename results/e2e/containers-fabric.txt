@@ -1,0 +1,8 @@
+dev-peer0.org1.example.com-hybrid_1.0-49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283
+dev-peer0.org2.example.com-hybrid_1.0-49b8dc978c0406f749380ca8663a176ec0b778506a68436f50b5c8be3f14c283
+peer0.org1.example.com
+peer0.org2.example.com
+couchdb0
+couchdb1
+orderer.example.com
+minio

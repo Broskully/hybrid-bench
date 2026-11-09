@@ -1,0 +1,47 @@
+caliper run 1: MVCC_READ_CONFLICT count = 0
+caliper run 2: MVCC_READ_CONFLICT count = 0
+caliper run 3: MVCC_READ_CONFLICT count = 0
+caliper run 4: MVCC_READ_CONFLICT count = 0
+caliper run 5: MVCC_READ_CONFLICT count = 0
+
+CALIPER (5 runs; latency is Caliper's per-round average and max)
+round            send   tput mean+-sd    tput/send  success%  avg s mean+-sd  max s mean  runs meeting criterion
+register-25tps    25.1    24.20 +-  0.00    96.41%   100.00    0.238 +-  0.004      2.068  5 of 5
+register-50tps    50.1    48.40 +-  0.00    96.61%   100.00    0.158 +-  0.004      2.074  5 of 5
+register-100tps  100.1    96.70 +-  0.00    96.60%   100.00    0.148 +-  0.008      2.096  5 of 5
+register-125tps  125.1   117.90 +-  2.67    94.24%   100.00    2.960 +-  1.440      6.590  2 of 5
+register-150tps  150.0   113.92 +-  2.74    75.94%   100.00   16.550 +-  2.028     27.166  0 of 5
+register-200tps  200.0   116.54 +-  2.30    58.26%   100.00   36.032 +-  1.906     43.738  0 of 5
+access-50tps      50.1    48.38 +-  0.04    96.57%   100.00    0.164 +-  0.015      2.094  5 of 5
+audit-100tps     100.1   100.00 +-  0.00    99.90%   100.00    0.014 +-  0.005      0.070  5 of 5
+highest register rate passing in all 5 runs : register-100tps
+highest register rate passing on the mean   : register-100tps
+
+PGBENCH (5 runs per client count)
+clients   tps mean+-sd          latency ms mean+-sd   failed tx total
+      1      1466.33 +-   54.45     0.683 +-  0.025   0
+     10      8641.06 +-  124.93     1.157 +-  0.017   0
+     50     17303.18 +-  326.00     2.890 +-  0.056   0
+
+E2E (single client; 200 registrations per size; times in ms)
+mode      size_bytes  n    offchain_median  ledger_median  ledger_p95  ledger_max  total_median  total_p95
+fabric         10240  200            6.109       2056.843    2218.190    2342.058      2063.059   2232.281
+fabric       1048576  200           11.802       2049.817    2059.693    2101.984      2062.365   2072.833
+fabric      10485760  200           51.912       2052.298    2074.047    2109.976      2109.181   2147.237
+postgres       10240  200            4.691          1.286       1.647       5.252         6.010      7.016
+postgres     1048576  200           10.985          1.280       1.954       7.324        12.801     16.956
+postgres    10485760  200           47.297          1.335       5.360       7.712        53.422     60.175
+fabric: median at 10 MB divided by median at 10 KB -> offchain 8.50x, ledger 1.00x
+postgres: median at 10 MB divided by median at 10 KB -> offchain 10.08x, ledger 1.04x
+
+DOCKER STATS (5 s samples over all 5 Caliper runs; 100% CPU = one logical CPU)
+container                 samples  cpu_median  cpu_max  mem_median_MiB  mem_max_MiB
+chaincode-org1                584        6.92    31.31            74.9         83.7
+chaincode-org2                584        3.41    24.59            73.4         84.8
+couchdb0                      584       25.41   109.44           136.3        254.1
+couchdb1                      584       13.00   109.46           136.6        260.4
+orderer.example.com           584        1.94    19.32           207.4        267.3
+peer0.org1.example.com        584       21.31    68.20           137.2        499.5
+peer0.org2.example.com        584       10.10    30.91           106.7        122.5
+
+Wrote 127 rows to /home/maximusdebois/hybrid-bench/results/analysis/summary-tables.csv

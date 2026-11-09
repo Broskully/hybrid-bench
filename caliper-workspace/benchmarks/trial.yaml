@@ -1,0 +1,18 @@
+test:
+  name: hybrid-registry-trial
+  description: Short connectivity trial only, not for results
+  workers:
+    number: 4
+  rounds:
+    - label: trial-register
+      txDuration: 10
+      rateControl: { type: fixed-rate, opts: { tps: 10 } }
+      workload: { module: workload/register.js }
+    - label: trial-access
+      txDuration: 10
+      rateControl: { type: fixed-rate, opts: { tps: 10 } }
+      workload: { module: workload/access.js, arguments: { parcels: 5, fn: RequestAccess } }
+    - label: trial-audit
+      txDuration: 10
+      rateControl: { type: fixed-rate, opts: { tps: 10 } }
+      workload: { module: workload/access.js, arguments: { parcels: 5, fn: QueryAuditTrail } }
